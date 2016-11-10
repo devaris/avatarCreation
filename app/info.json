@@ -1,0 +1,14 @@
+{
+  "version": "v2",
+  "unitTitle": "Avatar Creation",
+  "unitReference": "avatar_creation",
+  "unitDescription": "Avatar Creation Unit",
+  "unitPictureUri": "images/scr2_hero_frame_back.png",
+  "unitPictureContentType": "image/png",
+  "unitPictureSmallUri": "images/scr2_hero_frame_back.png",
+  "unitPictureSmallContentType": "image/png",
+  "duration": "60 min",
+  "facilitatorInformation": "",
+  "startPage": "index.html",
+  "resources":"MOBILE"
+}

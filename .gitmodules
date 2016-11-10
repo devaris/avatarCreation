@@ -1,0 +1,4 @@
+[submodule "avatar"]
+	path = avatar
+	url = https://devaris@bitbucket.org/crystalclear/papaloizos-avatar-display
+	branch = build_branch

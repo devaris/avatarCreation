@@ -1,0 +1,314 @@
+
+/* GLOBAL */
+body{
+    background: url('../images/scr1_back.jpg') left repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'diogenesregular';
+}
+
+
+/* INIT */
+#content{
+  display: none;
+}
+/* unvisited link */
+a:link, a:visited, a:hover, a:active{
+    color: #FFF;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+
+/* 1st Screen*/
+#scr1{
+    position:relative;
+    background:url('../images/scr1_frame.png') bottom center no-repeat;
+    height: 620px;
+}
+#scr1Name{
+    position: relative;
+    top: 44%;
+    margin-left: 1%;
+}
+#scr1Input{
+    width: 68%;
+    min-height: 36px;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.scr1Buttons{
+    float: left;
+    position: absolute;
+    top: 75%;
+    left: 33%;
+    cursor: pointer;
+}
+.scr1Buttons:nth-child(2){
+    left: 54%;
+}
+
+/* SLIDER CONTENT */
+
+.slider{
+    display:inline-block;
+    margin-bottom: 20px;
+    /*width: 100%;*/
+}
+
+.sliderContents{
+    margin-bottom: 1px;
+}
+
+.sliderContent{
+    height: 107px;
+    width: 156px;
+
+    /* NEW */
+    background: url('../images/scr2_options.png') center no-repeat scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+.sliderTitle{
+    
+}
+.sliderList{
+
+}
+
+/* SLIDER LISTS */
+
+.sliderList > ul{
+    /*overflow: hidden;*/
+}
+.sliderList > ul > li{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 55%;
+}
+.sliderList > ul > li > span{
+    opacity: 0;
+    transition: 1s opacity;
+    font-size: 18px;
+    color:#FFF;
+}
+.sliderList > ul > li > span.activate{
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+/* SLIDER BUTTONS */
+.next, .prev{
+    cursor: pointer;
+    opacity: .8;
+    min-height: 100px;
+    min-width: 65px;
+    
+    /*
+    color: #fff;
+    font-size: 2em;
+    background: rgba(0,0,0, .6);
+    */
+
+    /*margin-top: -.75em;*/
+    /*padding: 8% 0%;*/
+}
+.next:hover, .prev:hover{
+    opacity: 1;
+}
+.next{
+    /*padding: 10px 5px 15px 10px;*/
+
+    /* NEW */
+    background: url('../images/scr2_next.png') bottom no-repeat scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+.prev{
+    /*padding: 10px 10px 15px 5px;*/
+
+    /* NEW */
+    background: url('../images/scr2_prev.png') bottom no-repeat scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+/* AVATAR BUTTONS */
+.avatarButContainer{
+    background: url('../images/scr2_but_back.png') top left no-repeat scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    
+    margin-left: 15px;
+    min-width: 155px;
+}
+.avatarButton {
+    cursor: pointer;
+    padding-left: 15px;
+    padding-top: 8px;
+    /* margin-top: -.75em; */
+    /*opacity: .3;*/
+}
+.avatarButton:hover{
+    /*background: rgba(0,0,0, 0.6);*/
+}
+#doneButton{
+    padding-bottom: 15px;
+}
+
+/* AVATAR IMAGE */
+
+.avatar{
+    background: url('../images/scr2_hero_frame_back.png') left top no-repeat scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+
+/* TESTING/DELETE AVATAR IMAGES*/
+.fixSize{
+    background: url(../images/scr2_hero_frame.png) left top no-repeat scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    width: 110%;
+    position: relative;
+    
+    height: 540px;
+}
+#avatar_display-game {
+    height: 470px;
+    position: relative;
+    top: 30px;
+}
+
+/*****************************
+MEDIA 
+*****************************/
+
+/* Small Devices, Tablets */
+@media screen and (min-width: 768px){
+  .container {
+        min-width: 1024px!important;
+    }    
+}
+
+@media only screen and (max-width : 991px) {
+    .avatarButContainer {
+        margin-left: -10px;
+    }  
+}
+
+
+@media only screen and (max-width : 767px) {
+    .sliderContents{
+        margin: 5% 0 5% 22%;
+    }
+    .avatarButContainer{
+        margin: 0 0 0 16%;
+    }
+
+    .avatar{
+        background-position: center;
+        padding: 0px 18px 0 0;
+    }
+    .fixSize{
+        background-position: center; 
+    }
+
+    #avatar_display-game {
+        width: 45%;
+        margin: auto;
+    } 
+}
+
+@media only screen and (max-width : 680px) {
+    .sliderContents{
+        margin: 5% 0 5% 15%;
+    }
+    
+    .avatarButContainer{
+        margin: 0 0 0 11%;
+    }
+
+    .scr1Buttons {
+        left: 25%;
+    }
+    
+    #avatar_display-game {
+        width: 60%;
+    } 
+}
+@media only screen and (max-width : 540px) {
+    #sliders{
+        padding:0;
+    }
+    
+    .sliderContents{
+        margin: 5% 0 5% 5%;
+    }
+    
+    #scr1 {
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    #scr1Name {
+        top: 45%;
+    }
+    
+    .scr1Buttons {
+        left: 20%;
+        top: 65%;
+    }
+    
+    .scr1Buttons img {
+        width: 60%;
+    }
+    
+    #avatar_display-game {
+        width: 75%;
+    } 
+}
+@media only screen and (max-width : 400px) {
+    .sliderContents {
+        margin: 5% 0 5% 0%;
+    }
+    .avatarButContainer {
+        margin: 0 0 0 0;
+    }
+    #avatar_display-game {
+        width: 100%;
+    } 
+}

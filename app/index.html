@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>avatar</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/avatar.css">
+
+    <!-- endbuild -->
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+        <div class="row header"><h1></h1></div>
+
+
+        <div id="content" class="row">
+
+            <div class="col-sm-4 col-xs-12 avatar">
+                <div class="row fixSize">
+                    <div class="col-sm-11" >
+
+                        <div id="avatar_display-game" class="row game"></div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div><!--End avatar-->
+
+            <div id="sliders" class="col-sm-8 col-xs-12"></div><!--End sliders -->
+        </div>
+
+        <div id="scr1content" class="row">
+            <div class="col-sm-12 col-sm-offset-0 text-center">
+                <div id="scr1" class="row">
+                    <div id="scr1Name">
+                        <input id="scr1Input" type="text" name="firstname"><br>
+                    </div>
+                    <div id="scr1_boy" class="scr1Buttons">
+                        <img src="images/scr1_boy.png" alt="head_0_m_0">
+                    </div>
+                    <div id="scr1_girl" class="scr1Buttons">
+                        <img src="images/scr1_girl.png" alt="body_0_m">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row footer"></div>
+
+    </div>
+
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+
+    <!-- build:remove -->
+        <script src="scriptsLoc/store_api.js"></script>
+    <!-- endbuild -->
+
+    <!-- LYKIO includes -->
+    <script src="/lykio/js/store/store_api.js"></script>
+
+    <!-- build:remove -->
+    <script src="scriptsLoc/user_api.js"></script>
+    <!-- endbuild -->
+
+    <script src="/lykio/js/user/user_api.js"></script>
+
+    <!-- LYKIO LANGUAGE includes-->
+    <script src="/lykio/js/messages_config.js" type="application/javascript"></script>
+    <script src="/messages.js" type="application/javascript"></script>
+    <script src="/lykio/js/lykiolang.js" type="application/javascript"></script>
+
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js avatar/custom/phaser-no-physics.min.js -->
+    <script src="/avatar/custom/phaser-no-physics.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js avatar/bundle.min.js -->
+    <script src="/avatar/bundle.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js avatar/avatar.min.js -->
+    <script src="/avatar/avatar.min.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Avatar Creation Sandbox Page</title>
+    <script src="lykio/js/misc/jquery-1.11.1.min.js" type="application/javascript"></script>
+    <script src="lykio/js/store/store_api.js" type="application/javascript"></script>
+    <script src="lykio/js/store/store_api_usage.js" type="application/javascript"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div>
+        <h2>Gender</h2>
+        <select id="gender" onchange="initSelectors(this.value)">
+            <option value="-"> - </option>
+            <option value="m"> male </option>
+            <option value="f"> female </option>
+        </select>
+    </div>
+
+    <div>
+        <h2>Hair Length</h2>
+        <select id="hairLengthDDL" onchange="hairLengthChange(this.value)"></select>
+    </div>
+
+    <div>
+        <h2>Hair Color</h2>
+        <select id="hairColorDDL" onchange="hairColorChange(this.value)"></select>
+    </div>
+
+    <div>
+        <h2>Dress</h2>
+        <select id="dressDDL" onchange="dressChange(this.value)"></select>
+    </div>
+
+    <div>
+        <h2>Body</h2>
+        <select id="bodyDDL" onchange="bodyChange(this.value)"></select>
+    </div>
+
+    <div>
+        <h2>Face</h2>
+        <select id="faceDDL" onchange="faceChange(this.value)"></select>
+    </div>
+
+    <div>
+        <img id="hairAsset" src="" alt="" style="height:80px">
+        <img id="dressAsset" src="" alt="" style="height:80px">
+        <img id="bodyAsset" src="" alt="" style="height:80px">
+        <img id="faceAsset" src="" alt="" style="height:80px">
+    </div>
+
+
+</body>
+</html>
